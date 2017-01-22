@@ -2,9 +2,35 @@
 @import "bootstrap";
 
 body {
+  font-family: 'Arvo', serif;
   font-size: 1em;
+}
+
+h1, h2 {
+  font-family: 'Overpass', sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 #logo {
   float: left;
+}
+
+.main-nav {
+  font-size: 1.3em;
+  margin: 1px;
+  float: right;
+  margin: 20px 5px;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 5px;
 }

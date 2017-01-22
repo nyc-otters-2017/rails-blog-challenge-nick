@@ -5,19 +5,21 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<nav>
-  <ul>
-    <li> <%= link_to('Home', root_path)%> </li>
-    <li> <%= link_to('Sign Up', new_user_path)%> </li>
-  </ul>
-  
-
-</nav>
-<header><h1>Blog</h1></header>
-<%= yield %>
-
+  <header>
+    <div class="container">
+      <h1>Blog</h1>
+      <nav>
+        <ul class="nav navbar-nav navbar-right">
+          <li> <%= link_to('Home', root_path)%> </li>
+          <li> <%= link_to('Sign Up', new_user_path)%> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <%= yield %>
 </body>
 </html>
 

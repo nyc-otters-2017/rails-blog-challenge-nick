@@ -19,7 +19,8 @@ development:
   encoding: unicode
   database: rails-blog-challenge-nick_development
   pool: 5
-  username: rails-blog-challenge-nick
+  username: 
+  # rails-blog-challenge-nick
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a

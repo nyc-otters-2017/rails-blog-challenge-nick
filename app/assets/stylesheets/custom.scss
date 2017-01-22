@@ -1,2 +1,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+body {
+  font-size: 1em;
+}
+
+#logo {
+  float: left;
+}

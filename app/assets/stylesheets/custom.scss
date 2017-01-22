@@ -24,6 +24,7 @@ h2 {
 label {
   font-size: 1.3em;
 }
+
 #logo {
   float: left;
 }
@@ -38,4 +39,9 @@ label {
 .main-nav li {
   display: inline;
   margin: 5px;
+}
+
+.errors {
+  font-size: 1.4em;
+  color: red;
 }

@@ -26,6 +26,11 @@ label {
   font-size: 1.5em;
 }
 
+footer {
+  margin-top: 20px;
+  height: 100px;
+}
+
 #logo {
   float: left;
 }
@@ -71,6 +76,11 @@ label {
 .edit-button {
   margin-bottom: 10px;
 }
+
+.flash-alerts {
+  font-size: 1.5em;
+}
+
 @media (max-width: 460px) {
   #logo {
     float: none;

@@ -6,7 +6,7 @@ RailsBlogChallengeNick::Application.routes.draw do
 
   resources :posts, only: [:index, :show]
   resources :users do
-    resources :posts, only: [:new, :create, :edit]
+    resources :posts, only: [:new, :create, :edit, :destroy]
   end
 
 

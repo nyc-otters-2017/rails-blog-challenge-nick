@@ -9,7 +9,7 @@ class SessionsController <ApplicationController
       log_in user
       redirect_to user
     else
-      @errors = @user.errors.full_messages
+      @errors = ["Login information is incorrect"]
       render "new"
     end
   end

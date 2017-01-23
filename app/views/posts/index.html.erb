@@ -3,5 +3,17 @@
     <div class="col-sm-12 col-md-12 col-lg-12">
       <h2>All Posts</h2>
     </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 form-container">
+      <% if logged_in? %>
+      <%= button_to("Add Post", new_post_path, :class => "btn btn-default") %>
+      <% end %>
+    </div>
+    <div>
+      <ul>
+        <% @posts.each do |post| %>
+          <li> <%= post %> </li>
+        <% end %>
+      </ul>
+    </div>
   </div> 
 </div>

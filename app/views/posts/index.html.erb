@@ -12,9 +12,11 @@
       <% @posts.each do |post| %>
       <article class="post">
         <h3 class="post_title"> <%= post.title %> </h3>
-        <p class="post_date"> Posted <%= post.created_at.strftime("%A, %B %d %Y") %> </p>
+        <p class="date_author"> Posted <%= post.created_at.strftime("%A, %B %d %Y") %> by <%= post.user.username %> </p>
         <p class="post_content"> <%= post.content %> </p>
-        <%= link_to "Edit", edit_user_post_path(post, post), :class => "btn btn-default edit-button" %>
+        <% if logged_in? %>
+          <%= link_to "Edit", edit_user_post_path(post, post), :class => "btn btn-default edit-button" %>
+        <% end %>
       </article>
       <% end %>
     </div>

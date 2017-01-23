@@ -22,6 +22,15 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def update
+    @user = Post.find(params[:id])
+    if @post.update_attributes(post_params)
+      redirect_to root_url
+    else
+      render "edit"
+    end
+  end
+
   private
 
     def post_params

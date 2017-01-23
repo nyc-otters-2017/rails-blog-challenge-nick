@@ -10,12 +10,16 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(post_params)
-    if current_user.posts.create(post_params) 
-      redirect_to root_url 
+    if current_user.posts.create(post_params)
+      redirect_to root_url
     else
       @errors = @post.errors.full_messages
       render "new"
     end
+  end
+
+  def edit
+    @post = Post.find(params[:id])
   end
 
   private

@@ -11,9 +11,9 @@
     <div class="col-sm-12 col-md-12 col-lg-12">
       <% @posts.each do |post| %>
       <article class="post"> 
-        <h3> <%= post.title %> <h3>
-        <p> Posted <%= post.created_at.strftime("%A, %B %d %Y") %>
-        <p> <%= post.content %> </p>
+        <h3 class="post_title"> <%= post.title %> </h3>
+        <p class="post_date"> Posted <%= post.created_at.strftime("%A, %B %d %Y") %> </p>
+        <p class="post_content"> <%= post.content %> </p>
       </article>
       <% end %>
     </div>

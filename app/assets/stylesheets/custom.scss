@@ -1,0 +1,82 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+h1, h2 {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 3.3em;
+}
+
+h2 {
+  font-size: 2.3em;
+  padding-bottom: 5px;
+  border-bottom: 1px solid black;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+#logo {
+  float: left;
+}
+
+.main-nav {
+  font-size: 1.5em;
+  margin: 1px;
+  float: right;
+  margin: 20px 5px;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 5px;
+}
+
+.errors {
+  font-size: 1.8em;
+  color: red;
+}
+
+.profile {
+  font-size: 1.8em;
+}
+
+.post {
+  border-bottom: 1px solid black;
+}
+
+.post_title {
+  font-size: 2.3em;
+}
+
+.post_date {
+  font-size: 1.3em;
+}
+
+.post_content {
+  font-size: 1.5em;
+  padding: 10px;
+}
+
+@media (max-width: 460px) {
+  #logo {
+    float: none;
+    display: block;
+  }
+  .main-nav {
+    font-size: 1.4em;
+    float: none;
+    display: inline-block;
+    padding: 0;
+  }
+}

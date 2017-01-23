@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <h2>All Posts</h2>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 form-container">
+      <% if logged_in? %>
+      <%= link_to("Add Post", new_user_post_path(current_user), :class => "btn btn-default") %>
+      <% end %>
+    </div>
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <% @posts.each do |post| %>
+      <article class="post"> 
+        <h3 class="post_title"> <%= post.title %> </h3>
+        <p class="post_date"> Posted <%= post.created_at.strftime("%A, %B %d %Y") %> </p>
+        <p class="post_content"> <%= post.content %> </p>
+      </article>
+      <% end %>
+    </div>
+  </div> 
+</div>

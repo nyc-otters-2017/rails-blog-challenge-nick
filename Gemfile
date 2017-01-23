@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
+gem 'bootstrap-sass'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
@@ -34,7 +35,7 @@ end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'bcrypt'
 # Use unicorn as the app server
 # gem 'unicorn'
 

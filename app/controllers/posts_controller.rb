@@ -27,6 +27,7 @@ class PostsController < ApplicationController
     if @post.update_attributes(post_params)
       redirect_to root_url
     else
+      @errors = @post.errors.full_messages
       render "edit"
     end
   end

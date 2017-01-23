@@ -67,3 +67,16 @@ label {
   font-size: 1.5em;
   padding: 10px;
 }
+
+@media (max-width: 460px) {
+  #logo {
+    float: none;
+    display: block;
+  }
+  .main-nav {
+    font-size: 1.4em;
+    float: none;
+    display: inline-block;
+    padding: 0;
+  }
+}

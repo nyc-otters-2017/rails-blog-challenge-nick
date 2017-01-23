@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+
   def index
   end
 
@@ -20,9 +20,10 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @posts = @user.posts
   end
 
-  private 
+  private
 
     def user_params
       params.require(:user).permit(:username, :email, :password, :passwod_confirmation)

@@ -1,0 +1,11 @@
+<% @posts.each do |post| %>
+  <article class="post">
+   <h3 class="post_title"> <%= post.title %> </h3>
+    <p class="date_author"> Posted <%= post.created_at.strftime("%A, %B %d %Y") %> by <%= post.user.username %> </p>
+    <p class="post_content"> <%= post.content %> </p>
+    <% if logged_in? %>
+      <%= link_to "Edit", edit_user_post_path(post, post), :class => "btn btn-default edit-button" %>
+      <%= link_to "Delete", user_post_path(post, post), method: :delete, :class => "btn btn-default edit-button" %>
+    <% end %>
+  </article>
+<% end %>

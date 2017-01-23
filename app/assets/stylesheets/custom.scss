@@ -38,7 +38,7 @@ footer {
 .main-nav {
   font-size: 1.5em;
   margin: 1px;
-  float: right;
+  text-align: right;
   margin: 20px 5px;
 }
 
@@ -81,15 +81,17 @@ footer {
   font-size: 1.5em;
 }
 
-@media (max-width: 460px) {
+
+@media (max-width: 750px) {
   #logo {
     float: none;
     display: block;
   }
+
   .main-nav {
     font-size: 1.4em;
     float: none;
-    display: inline-block;
+    margin: 0;
     padding: 0;
   }
 }

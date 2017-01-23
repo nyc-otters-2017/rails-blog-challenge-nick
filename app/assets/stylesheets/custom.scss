@@ -7,8 +7,11 @@ body {
   font-size: 1em;
 }
 
+a {
+  color: #215EDF;
+}
+
 h1, h2 {
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -31,8 +34,14 @@ footer {
   height: 100px;
 }
 
+header {
+  background-color: #E4F0D7;
+  height: 125px;
+}
+
 #logo {
   float: left;
+  font-weight: 700;
 }
 
 .main-nav {

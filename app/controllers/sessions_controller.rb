@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email])
     if user && user.authenticate(params[:session][:password])
       log_in user
-      flash[:success] = "Welcome to the the Build Up!"
+      flash[:success] = "Welcome to the Build Up!"
       redirect_to user
     else
       @errors = ["Login information is incorrect"]

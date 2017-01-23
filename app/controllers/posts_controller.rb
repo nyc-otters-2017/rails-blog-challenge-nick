@@ -23,7 +23,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    @user = Post.find(params[:id])
+    @post = Post.find(params[:id])
     if @post.update_attributes(post_params)
       redirect_to root_url
     else
